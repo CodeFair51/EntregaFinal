@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{53502EEF-646E-4F7F-8791-C072FC20D737}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Presentation</RootNamespace>
+    <AssemblyName>Presentation</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmsInit\FrmSelectDeport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmsInit\FrmSelectDeport.Designer.cs">
+      <DependentUpon>FrmSelectDeport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IntoFrmHub\FrmResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IntoFrmHub\FrmResult.Designer.cs">
+      <DependentUpon>FrmResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IntoFrmHub\IntoFrmExplore\FrmMatchs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IntoFrmHub\IntoFrmExplore\FrmMatchs.Designer.cs">
+      <DependentUpon>FrmMatchs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IntoFrmHub\IntoFrmExplore\FrmPositions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IntoFrmHub\IntoFrmExplore\FrmPositions.Designer.cs">
+      <DependentUpon>FrmPositions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IntoFrmHub\IntoFrmHome\PnlChampionship.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="IntoFrmHub\PnlMatch.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="IntoFrmHub\IntoFrmFavorites\FrmEditFavorites.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IntoFrmHub\IntoFrmFavorites\FrmEditFavorites.Designer.cs">
+      <DependentUpon>FrmEditFavorites.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IntoFrmHub\IntoFrmFavorites\FrmFavorites.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IntoFrmHub\IntoFrmFavorites\FrmFavorites.Designer.cs">
+      <DependentUpon>FrmFavorites.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IntoFrmHub\IntoFrmHome\FrmHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IntoFrmHub\IntoFrmHome\FrmHome.Designer.cs">
+      <DependentUpon>FrmHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IntoFrmHub\FrmHub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IntoFrmHub\FrmHub.Designer.cs">
+      <DependentUpon>FrmHub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmsInit\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmsInit\FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmsInit\FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmsInit\FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmsInit\FrmRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmsInit\FrmRegister.Designer.cs">
+      <DependentUpon>FrmRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IntoFrmHub\IntoFrmExplore\FrmChampionship.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IntoFrmHub\IntoFrmExplore\FrmChampionship.Designer.cs">
+      <DependentUpon>FrmChampionship.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IntoFrmHub\IntoFrmExplore\FrmExplore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IntoFrmHub\IntoFrmExplore\FrmExplore.Designer.cs">
+      <DependentUpon>FrmExplore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmsInit\Program.cs" />
+    <Compile Include="IntoFrmHub\PnlDisplay.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmsInit\FrmSelectDeport.resx">
+      <DependentUpon>FrmSelectDeport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IntoFrmHub\FrmResult.resx">
+      <DependentUpon>FrmResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IntoFrmHub\IntoFrmExplore\FrmMatchs.resx">
+      <DependentUpon>FrmMatchs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IntoFrmHub\IntoFrmExplore\FrmPositions.resx">
+      <DependentUpon>FrmPositions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IntoFrmHub\IntoFrmFavorites\FrmEditFavorites.resx">
+      <DependentUpon>FrmEditFavorites.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IntoFrmHub\IntoFrmFavorites\FrmFavorites.resx">
+      <DependentUpon>FrmFavorites.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IntoFrmHub\IntoFrmHome\FrmHome.resx">
+      <DependentUpon>FrmHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IntoFrmHub\FrmHub.resx">
+      <DependentUpon>FrmHub.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmsInit\FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmsInit\FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmsInit\FrmRegister.resx">
+      <DependentUpon>FrmRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IntoFrmHub\IntoFrmExplore\FrmChampionship.resx">
+      <DependentUpon>FrmChampionship.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IntoFrmHub\IntoFrmExplore\FrmExplore.resx">
+      <DependentUpon>FrmExplore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ApiAuthentication\ApiAuthentication.csproj">
+      <Project>{231e0869-6a43-4e15-b0f1-11ebe3a2b60a}</Project>
+      <Name>ApiAuthentication</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ApiPublicity\ApiPublicity.csproj">
+      <Project>{5cfa1a1c-aa71-4a5e-a348-1c2400da2da4}</Project>
+      <Name>ApiPublicity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ApiResults\ApiResults.csproj">
+      <Project>{68c6413b-376f-4958-80eb-27529bf83419}</Project>
+      <Name>ApiResults</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

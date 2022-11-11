@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{943D428A-B083-4FA1-ACDB-AD0E7F023C15}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BackOfficeAdmin</RootNamespace>
+    <AssemblyName>BackOfficeAdmin</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmHub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHub.Designer.cs">
+      <DependentUpon>FrmHub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementFrames\FrmAdminMan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagementFrames\FrmAdminMan.Designer.cs">
+      <DependentUpon>FrmAdminMan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementFrames\FrmBannerMan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagementFrames\FrmBannerMan.Designer.cs">
+      <DependentUpon>FrmBannerMan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementFrames\FrmChampionshipMan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagementFrames\FrmChampionshipMan.Designer.cs">
+      <DependentUpon>FrmChampionshipMan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementFrames\FrmMatchChampionshipMan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagementFrames\FrmMatchChampionshipMan.Designer.cs">
+      <DependentUpon>FrmMatchChampionshipMan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementFrames\FrmSinglePlayerMan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagementFrames\FrmSinglePlayerMan.Designer.cs">
+      <DependentUpon>FrmSinglePlayerMan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementFrames\FrmTeamMan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagementFrames\FrmTeamMan.Designer.cs">
+      <DependentUpon>FrmTeamMan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementFrames\FrmTeamMatchMan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagementFrames\FrmTeamMatchMan.Designer.cs">
+      <DependentUpon>FrmTeamMatchMan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementFrames\FrmSingleMatchMan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagementFrames\FrmSingleMatchMan.Designer.cs">
+      <DependentUpon>FrmSingleMatchMan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementFrames\FrmClientMan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagementFrames\FrmClientMan.Designer.cs">
+      <DependentUpon>FrmClientMan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementFrames\FrmTeamPlayerMan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagementFrames\FrmTeamPlayerMan.Designer.cs">
+      <DependentUpon>FrmTeamPlayerMan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementFrames\FrmUpdateResults.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagementFrames\FrmUpdateResults.Designer.cs">
+      <DependentUpon>FrmUpdateResults.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementFrames\PnlUpdateResult.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PnlDisplay.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmHub.resx">
+      <DependentUpon>FrmHub.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagementFrames\FrmAdminMan.resx">
+      <DependentUpon>FrmAdminMan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagementFrames\FrmBannerMan.resx">
+      <DependentUpon>FrmBannerMan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagementFrames\FrmChampionshipMan.resx">
+      <DependentUpon>FrmChampionshipMan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagementFrames\FrmMatchChampionshipMan.resx">
+      <DependentUpon>FrmMatchChampionshipMan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagementFrames\FrmSinglePlayerMan.resx">
+      <DependentUpon>FrmSinglePlayerMan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagementFrames\FrmTeamMan.resx">
+      <DependentUpon>FrmTeamMan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagementFrames\FrmTeamMatchMan.resx">
+      <DependentUpon>FrmTeamMatchMan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagementFrames\FrmSingleMatchMan.resx">
+      <DependentUpon>FrmSingleMatchMan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagementFrames\FrmClientMan.resx">
+      <DependentUpon>FrmClientMan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagementFrames\FrmTeamPlayerMan.resx">
+      <DependentUpon>FrmTeamPlayerMan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagementFrames\FrmUpdateResults.resx">
+      <DependentUpon>FrmUpdateResults.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entities\Entities.csproj">
+      <Project>{aeac2a2f-1aad-47eb-9d40-ce429d90d528}</Project>
+      <Name>Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Logic\Logic.csproj">
+      <Project>{8183b9e2-2d1c-4d80-af6a-760d9a229bb8}</Project>
+      <Name>Logic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
